@@ -12,7 +12,6 @@ export default ({ hotelName, rating, startTime, finishTime, hostingType }) => (
 
       <StarsRating
          rating={rating}
-         size={25}
          className="deal-rating"
       />
 

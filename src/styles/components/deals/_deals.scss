@@ -7,18 +7,19 @@
 .deal {
    display: flex;
    justify-content: flex-end;
-   margin-top: calc(15 * $rpx);
-   height: calc(205 * $rpx);
+   margin-top: 15 *$rpx;
+   //height: 205 * $rpx;
+   height: Max(1.1 * 205 * 100vw / 1680, 0.5px);
 }
 
 .deal-img {
-   width: calc(180* $rpx);
+   width: 180*$rpx;
 }
 
 .deal-button {
    color: white;
-   padding: calc(13*$rpx) calc(18*$rpx);
-   font-size:  calc(16*$rpx);
+   padding: 13*$rpx 18*$rpx;
+   font-size: 16* $rpx;
 }
 
 
@@ -29,8 +30,8 @@
    text-align: center;
    justify-content: center;
 
-   width: calc(200*$rpx);
-   padding: 0 calc(30*$rpx);
+   width: 200*$rpx;
+   padding: 0 30*$rpx;
    border: $dealBorder;
    background-color: rgb(237, 245, 250);
    color: $azure;
@@ -41,17 +42,17 @@
    }
 
    h1 {
-      font-size:  calc(30*$rpx);
+      font-size: 30* $rpx;
    }
 
    h5 {
-      font-size:  calc(12*$rpx);
+      font-size: 12* $rpx;
    }
 
    button {
       background-color: rgb(255, 41, 41);
-      margin-top:  calc(20 *$rpx);
-      margin-bottom: calc(5* $rpx);
+      margin-top: 20 * $rpx;
+      margin-bottom: 5*$rpx;
       font-weight: 600;
    }
 }

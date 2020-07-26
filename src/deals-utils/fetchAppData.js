@@ -1,5 +1,5 @@
 
-import { dealsDemoData, dealsDemoServerUrl } from '../utils/dealsDemoData';
+import { dealsDemoData, dealsDemoServerUrl } from './dealsDemoData';
 import { setDeals } from '../actions/deals';
 const isDemoMode = true;
 

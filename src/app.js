@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import MainPage from './components/pages/MainPage';
 import LoadingPage from './components/pages/LoadingPage';
 import configureStore from './store/configureStore';
-import fetchAppData from './utils/fetchAppData';
+import fetchAppData from './deals-utils/fetchAppData';
 
 
 import 'normalize.css/normalize.css';
