@@ -1,0 +1,38 @@
+.header-container {
+   color: white;
+   background-image: url('/images/header_background12.png');
+   background-size: cover;
+   border-radius: 0 !important;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 23px;
+
+   @media (max-width: $header-breakpoint-L) {
+      flex-direction: column;
+   }
+}
+
+
+
+.header-logo {
+   height: 40px;
+}
+
+.coin-type {
+   display: inline;
+   font-size: 16px;
+   margin-left: 35px;
+   font-weight: 600;
+}
+
+
+.header-title {
+   display: flex;
+   align-items: center;
+   
+   @media (max-width: $header-breakpoint-L) {
+      margin-bottom: 20px;
+   }
+}

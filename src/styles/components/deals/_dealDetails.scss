@@ -1,0 +1,65 @@
+.deal-details {
+   width: 500 * $deal-scale;
+   border: $dealBorder;
+   padding: 15* $deal-scale;
+   margin-left: 15* $deal-scale;
+   margin-right: 15* $deal-scale;
+   display: flex;
+   flex-direction: column;
+   text-align: right;
+
+   h2 {
+      margin: 0;
+      color: $azure;
+      font-weight: 500;
+      font-size: 25* $deal-scale;
+   }
+}
+
+.deal-times {
+   margin-top: 6* $deal-scale;
+   margin-bottom: 5* $deal-scale;
+}
+
+.deal-time {
+   display: block;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin: 0;
+   font-weight: 400;
+   margin-bottom: 3* $deal-scale;
+
+   .span-strong {
+      margin-left: 8* $deal-scale;
+      font-weight: 700;
+   }
+}
+
+.span-separator {
+   margin: 0 10*$deal-scale 0 12*$deal-scale;
+}
+
+
+.deal-nights {
+   display: flex;
+   justify-content: space-between;
+   p {
+      margin: 0;
+      font-weight: 600;
+      font-size: 16* $deal-scale;
+   }
+
+   button {
+      background-color: $azure;
+      margin: -18*$deal-scale 0 0 5*$deal-scale;
+      font-size: 16* $deal-scale;
+   }
+}
+
+.deal-rating {
+   align-self: flex-end;
+   margin-top: -5*$deal-scale;
+
+   span {
+      margin: 0 4*$deal-scale;
+   }
+}

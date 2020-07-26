@@ -1,0 +1,27 @@
+.footer-links {
+   background-color: rgb(71, 71, 71);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 0 !important;
+
+   img {
+      margin: 50px 0 20px 0;
+      width: 260px;
+   }
+}
+
+.footer-links-body {
+   display: flex;
+   text-align: right;
+   margin-bottom: 50px;
+}
+
+.footer-linksColumn {
+   color: white;
+   margin: 0 50px;
+}
+
+.footer-link {
+   cursor: pointer;
+}

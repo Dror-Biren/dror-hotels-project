@@ -1,0 +1,27 @@
+@import './vars';
+@import './base';
+@import './loader';
+
+
+@import '../components/header/header';
+@import '../components/header/toolbar';
+
+@import '../components/deals/deals';
+@import '../components/deals/dealDetails';
+
+@import '../components/soters/sorters';
+@import '../components/soters/sorterButton';
+
+
+@import '../components/filters/filters';
+@import '../components/filters/checbox';
+@import '../components/filters/options';
+@import '../components/filters/pricesSlider';
+@import '../components/filters/search-filter';
+
+@import '../components/footer/contactUs';
+@import '../components/footer/footerLinks';
+@import '../components/footer/socialMadiaLinks';
+
+
+

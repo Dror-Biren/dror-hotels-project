@@ -1,0 +1,42 @@
+.toolbar {
+   @media (min-width: $header-breakpoint-L) {
+      margin-left: 80px;
+   }
+   
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+.curOption {
+   background-color: white;
+   color: rgb(32, 32, 32);
+}
+
+.toolbarOption {
+   padding: 12px;
+   margin: 10px;
+   text-align: center;
+   vertical-align: middle;
+   cursor: pointer;
+
+
+   &:hover {
+      @extend .curOption;
+   }
+
+   @media (max-width: $header-breakpoint-S) {
+      font-size: 12px;
+      margin: 5px;
+      padding: 6px;
+   }
+}
+
+
+/*
+   padding: 12px;
+   margin: 10px;
+   width: 120px;
+   max-width: 7vw;
+   text-align: center;
+   font-size: 100%;
+ */

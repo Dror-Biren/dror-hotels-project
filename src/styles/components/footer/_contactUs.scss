@@ -1,0 +1,40 @@
+.contactUs-container {
+   margin-top: 50px;
+   text-align: right;
+
+   height: 350px;
+   background-image: url('/images/contactUs_background.jpg');
+   background-size: 100% 100%;
+   //background-position-y: 70%;
+
+   display: flex;
+   align-content: center;
+   justify-content: center;
+}
+
+.contact-form {
+   display: flex;
+   button {
+      background-color: red;
+      color: white;
+      font-size: 23px;
+      padding: 15px 100px;
+   }
+
+   .emailInput {
+      margin: 0 20px;
+   }
+
+   input {
+      text-align: right;
+      padding: 10px;
+   }
+}
+
+.contactUs-title {
+   margin-top: 100px;
+   color: $azure;
+   font-size: 22px;
+   font-weight: 500;
+   //text-align: right;
+}

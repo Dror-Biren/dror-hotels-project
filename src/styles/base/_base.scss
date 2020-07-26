@@ -1,26 +1,52 @@
+
+
 * {
   box-sizing: border-box;
+  transition: all 0.5s;
+  border-radius: 3.5px;
 }
 
-html {
-  font-size: 62.5%;
-}
 
 body {
-  color: $dark-grey;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: $m-size;
-  line-height: 1.6;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   //font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   //font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+   letter-spacing: 1.3px;
+   line-height: 1.6;
+   color: rgb(59, 59, 59);
+}
+
+#app, .app, body, html {
+   min-width: 100%;
 }
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 button:disabled {
   cursor: default;
 }
 
-.is-active {
-  font-weight: bold;
+.page-content {
+   margin-top: 30px;
+   display: flex;
+   justify-content: center;
+
+   @media (max-width: $content-breakpoint-S) {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-items: stretch;
+   }
 }
+
+.pageCenter {
+   margin: 10px 30px 0 0;
+
+   @media (max-width: $content-breakpoint-S) {
+      margin: 0;
+   }
+}
+
