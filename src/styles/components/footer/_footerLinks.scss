@@ -3,25 +3,31 @@
    display: flex;
    flex-direction: column;
    align-items: center;
+   //text-align: center;
    border-radius: 0 !important;
 
    img {
-      margin: 50px 0 20px 0;
-      width: 260px;
+      margin: scale-S(50) 0 scale-S(20) 0;
+      width: scale-S(260);
    }
 }
 
 .footer-links-body {
    display: flex;
    text-align: right;
-   margin-bottom: 50px;
+   margin-bottom: scale-S(50);
 }
 
 .footer-linksColumn {
    color: white;
-   margin: 0 50px;
+   margin: 0 scale-S(50);
+
+   h2 {
+      font-size: scale-S(30);
+   }
 }
 
 .footer-link {
    cursor: pointer;
+   font-size: scale-S(16);
 }

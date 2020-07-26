@@ -1,5 +1,5 @@
 import React from 'react';
-import { pagesLabels } from '../../consts';
+import { pagesLabels } from '../../consts/links';
 
 function getClassName(isCurPage) {
    var result = "toolbarOption"

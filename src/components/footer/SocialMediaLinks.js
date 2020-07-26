@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { socialMadiaImages } from '../../consts';
+import { socialMadiaImages } from '../../consts/links';
 
 const createSocialMadiaLink = (url, index) => (
    <img 

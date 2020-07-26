@@ -1,11 +1,11 @@
 .search-input {
    color: rgb(29, 29, 29);
    text-align: right;
-   height: 35px;
-   width: 210px;
-   font-size: 14px;
+   height: scale-L(35);
+   width: scale-L(210);
+   font-size: scale-L(14);
 
-   padding: 10px;
+   padding: scale-L(10);
    border: none;
 
    &::placeholder {
@@ -19,15 +19,30 @@
    flex-direction: row;
    justify-content: center;
    align-items: center;
-   padding: 16px 2px 16px 12px;
+   padding: scale-L(16) scale-L(2) scale-L(16) scale-L(12);
 }
 
 
+.searchIcon {
+   width: scale-L(20);
+   margin-right: -25px;;
+   z-index: 99;
+   filter: brightness(-30%);
+}
+
+
+
+/*
 .MuiSvgIcon-root {
    background-color: white;
    color: #666666;
-   height: 25px;
+   height: scale-L(25);
    
-   margin-right: -35px;
+   margin-right: scale-L(-45);
    z-index: 99;
+
+   @media(max-width: $content-breakpoint) {
+      margin-right: scale-L(-50);
+   }
 }
+*/

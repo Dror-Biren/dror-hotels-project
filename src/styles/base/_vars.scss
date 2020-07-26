@@ -2,11 +2,24 @@ $azure: rgb(0, 149, 218);
 $dealBorder: 1px solid rgb(179, 179, 179);
 
 //$rpx: Max(1.1 * 100vw / 1680, 0.5px);
-$rpx: 1.1 * 100vw / 1680;
+//$rpx: 1.1 * 100vw / 1680;
+
+@function scale($size, $minScale) {
+   @return Max(1 * $size * 100vw / 1680, $minScale * $size);
+}
 
 
+@function scale-S($size) {
+   @return scale($size, 0.44px);
+}
+
+@function scale-L($size) {
+   @return scale($size, 0.7px);
+}
+ 
 
 $header-breakpoint-L: 1060px;
 $header-breakpoint-S: 600px;
 
-$content-breakpoint-S: 600px;
+$content-breakpoint: 600px;
+$sorters-breakpoint: 900px;

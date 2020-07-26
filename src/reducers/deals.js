@@ -1,4 +1,4 @@
-import { reducersActions } from '../consts';
+import reducersActions from '../consts/reducersActions';
 const { SET_ALL } = reducersActions.DEALS; // + { ADD, EDIT, REMOVE }
 
 const dealsReducerDefaultState = [];

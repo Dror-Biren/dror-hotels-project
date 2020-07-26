@@ -1,4 +1,4 @@
-import { reducersActions } from '../consts';
+import reducersActions from '../consts/reducersActions';
 const { 
    SET_SEARCH,
    SET_PRICES_RANGE,

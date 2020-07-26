@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { maxRatingStars } from '../../consts';
+import { maxRatingStars } from '../../consts/filters';
 import { toggleSelectRatingOption } from '../../actions/filters';
 import Rating_option from './Rating_option';
 

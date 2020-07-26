@@ -10,7 +10,11 @@ export default ({ rating, actionWhenToggleSelect }) => {
             819$
          </p>
 
-         <StarsRating rating={rating} includeUnmarkedStars={true}/>
+         <StarsRating 
+            className="filters_rating"
+            rating={rating} 
+            includeUnmarkedStars={true}
+         />
 
          <Checkbox actionWhenChange={actionWhenToggleSelect}/>
       </div>

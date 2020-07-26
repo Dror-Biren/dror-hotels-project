@@ -9,14 +9,15 @@ export default ({ actionWhenChange = emptyFunc }) => {
       setChecked(newChecked);
    }
 
+   const checkedString = cheacked ? "checked" : "unchecked";
    return (
-      <label className="checbox-container">
-         <input
-            type="radio"
-            checked={cheacked}
-            readOnly
-            onClick={toggleChecked} />
-         <span className="checkmark"></span>
-      </label>
+      <div 
+         className="checkbox"
+         onClick={toggleChecked}>
+
+         <div
+            className={"checkSign checkSign-"+checkedString}
+         />
+      </div>
    )
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { pagesKeys } from '../../consts';
+import { pagesKeys } from '../../consts/links';
 import DealsPage from './DealsPage';
 import DemoPage from './DemoPage';
 import Header from '../header/Header';

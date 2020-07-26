@@ -1,5 +1,5 @@
 import React from 'react';
-import { footerToolbarOptions } from '../../consts';
+import { footerToolbarOptions } from '../../consts/links';
 
 import LinksColumn from './LinksColumn';
 

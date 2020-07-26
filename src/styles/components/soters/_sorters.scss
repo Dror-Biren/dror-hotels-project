@@ -2,7 +2,7 @@
    display: flex;
    justify-content: flex-end;
 
-   @media (max-width: $content-breakpoint-S) {
+   @media (max-width: $sorters-breakpoint) {
       flex-direction: column-reverse;
       align-items: center;
    }
@@ -12,36 +12,48 @@
 .sorters-select-container {
    display: flex;
    align-items: center;
-   //margin-right: 50px;
+   //margin-right: 50scale-L();
 
    font-family: Arial, Helvetica, sans-serif;
 }
 
 .sorters-select-label {
-   margin: 0 15px 0 10px;
+   font-size: scale-L(20);
+   margin: 0 scale-L(15) 0 scale-L(10);
 
-   @media (max-width: $content-breakpoint-S) {
+   @media (max-width: $sorters-breakpoint) {
       margin: 0 0 0 16px;
    }
 }
 
-
 .sorters-select {
-   width: 230px;
+   width: scale-L(230);
+   font-size: scale-L(16);
+
+   svg {
+      width: scale-L(20);
+      height: scale-L(20);
+   }
+}
+
+.css-tlfecz-indicatorContainer { //arrow img
+   padding: scale-L(8);
+   //width: scale-L(50);
+   //height: scale-L(50);
 }
 
 .sorters-buttonsMenu {
    display: flex;
-   height: 55px;
+   //height: scale-L(55);
    border-left: 1px solid gray;
    border-radius: 0 !important;
 
    
-   @media (max-width: $content-breakpoint-S) {
+   @media (max-width: $sorters-breakpoint) {
       border: none;
       margin-top: 20px;
       margin-bottom: 20px;
    }
-   
 }
+
 

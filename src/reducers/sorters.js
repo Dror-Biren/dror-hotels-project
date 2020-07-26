@@ -1,4 +1,5 @@
-import { reducersActions, sorterKeys } from '../consts';
+import reducersActions from '../consts/reducersActions';
+import { sorterKeys } from '../consts/sorters';
 
 const { SET_SORT_BY } = reducersActions.SORTERS;
 

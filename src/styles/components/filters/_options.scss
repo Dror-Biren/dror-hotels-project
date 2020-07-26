@@ -1,27 +1,41 @@
 .filters_options {
-   margin-top: -10px;
-   padding-bottom: 12px;
+   margin-top: scale-L(-10);
+   padding-bottom: scale-L(12);
 }
 
 .filters_option {
-   padding-right: 5px;
-   padding-left: 20px;
+   padding-right: scale-L(5);
+   padding-left: scale-L(20);
 
    display: flex;
    flex-direction: row;
    align-items: center;
    justify-content: space-between;
+
+   p {
+      font-size: scale-L(16);
+   }
 }
 
 
 .filters_option-name {
    text-align: right;
-   width: 100px;
-   margin-left: 30px;
+   width: scale-L(100);
+   margin-left: scale-L(30);
+
+   font-size: scale-L(16);
 }
 
 .filters_option-price {
-   font-size: 14px;
+   font-size: scale-L(14);
 }
 
+.filters_rating {
+   //margin-top: scale-L(-7);
+
+   span {
+      margin: scale-L(-7) scale-L(2);
+      font-size: scale-L(30) !important;
+   }
+}
 

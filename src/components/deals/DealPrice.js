@@ -10,7 +10,9 @@ export default ({ price }) => (
       </h5>
 
       <div>
-         <button className="deal-button">
+         <button 
+            className="deal-button"
+            onClick={() => alert("פרטים נוספים")}>
             פרטים נוספים
          </button>
       </div>

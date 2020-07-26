@@ -1,9 +1,10 @@
+import reducersActions from '../consts/reducersActions';
 import { 
-   reducersActions, 
    pricesRangeLimits, 
-   hostingTypesOptions, 
-   maxRatingStars 
-} from '../consts';
+   hostingTypesOptions,
+    maxRatingStars 
+} from '../consts/filters';
+
 
 const { 
    SET_SEARCH,

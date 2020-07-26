@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import HostingTypeOption from './HostingType_option';
 
-import { hostingTypesOptions } from '../../consts';
+import { hostingTypesOptions } from '../../consts/filters';
 import { toggleSelectHostingOption } from '../../actions/filters';
 
 

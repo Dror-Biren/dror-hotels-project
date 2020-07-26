@@ -3,12 +3,13 @@
    align-items: center;
    transition: color 0s;
 
-   margin-left: 30px;
-   padding: 3px 5px 3px 10px;
+   margin-left: scale-L(30);
+   padding: scale-L(3) scale-L(5) scale-L(3) scale-L(10);
    color: rgb(87, 87, 87);
    
-   @media (max-width: $content-breakpoint-S) {
-      margin: 0 6px;
+
+   @media (max-width: $sorters-breakpoint) {
+     margin: 0 6px;
    }
 
    &:hover {
@@ -17,22 +18,24 @@
 }
 
 .sorter-button-text {
-   margin: 7px 2px 7px 7px;
-   font-size: 17px;
+   margin: scale-L(7) scale-L(2) scale-L(7) scale-L(7);
+   font-size: scale-L(17);
    text-align: center;
 
-   @media (max-width: $content-breakpoint-S) {
+   
+   @media (max-width: $sorters-breakpoint) {
       margin: 3px;
-      font-size: 13px;
+      font-size: 10px;
       max-width: 45px;
    }
 }
 
 .sorter-button-img {
-   width: 40px;
+   width: scale-L(40);
    filter:hue-rotate(170deg);
 
-   @media (max-width: $content-breakpoint-S) {
+   
+   @media (max-width: $sorters-breakpoint) {
       width: 30px;
    }
 }

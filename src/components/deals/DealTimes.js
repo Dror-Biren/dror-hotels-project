@@ -39,7 +39,9 @@ export default ({ startTime, finishTime , hostingType}) => (
       </p>
 
       <div className="deal-nights">
-         <button className="deal-button">
+         <button 
+            className="deal-button deal-button-packages"
+            onClick={() => alert("חבילות נוספות")}>
             הצג חבילות נוספות למלון זה
          </button>
 

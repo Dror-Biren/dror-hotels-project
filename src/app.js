@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 
 import MainPage from './components/pages/MainPage';
 import LoadingPage from './components/pages/LoadingPage';
-import configureStore from './store/configureStore';
+import configureStore from './reducers/configureStore';
 import fetchAppData from './deals-utils/fetchAppData';
 
 

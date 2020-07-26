@@ -1,4 +1,5 @@
-import { sorterKeys, ratingWorthwhileValueCompareToPrice, maxRatingStars } from '../consts';
+import { sorterKeys, ratingWorthCompareToPrice } from '../consts/sorters';
+import { maxRatingStars } from '../consts/filters';
 
 const getCompareFunc = (evaluateDeal) => (
    (deal1, deal2) => evaluateDeal(deal1) - evaluateDeal(deal2)
@@ -36,5 +37,5 @@ function getWorthwhileValue({ rating, price, startTime, finishTime }) {
    const pricePerDay = price / dealDays;
 
    const normalizedRating = 1 - rating / maxRatingStars;
-   return pricePerDay + ratingWorthwhileValueCompareToPrice * normalizedRating;
+   return pricePerDay + ratingWorthCompareToPrice * normalizedRating;
 }

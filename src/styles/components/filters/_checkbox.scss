@@ -1,0 +1,28 @@
+.checkbox {
+   width: scale-L(22);
+   height: scale-L(22);
+   margin-right: scale-L(15);
+   //margin-top: scale-L(3);
+   border: 1.5px solid white;
+
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 100% !important;
+
+   &:hover {
+      background-color: rgba(255, 255, 0, 0.452);
+   };
+}
+
+.checkSign {
+   width: scale-L(9);
+   height: scale-L(9);
+   background-color: white;
+   border-radius: 100% !important;
+}
+
+.checkSign-unchecked {
+   opacity: 0;
+}

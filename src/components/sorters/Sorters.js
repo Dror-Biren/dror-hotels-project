@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import SelectMenu from './SelectMenu';
 import ButtonOption from './ButtonOption';
-import { sorterOptionsData } from '../../consts';
+import { sorterOptionsData } from '../../consts/sorters';
 import { setSortBy } from '../../actions/sorters';
 
 
