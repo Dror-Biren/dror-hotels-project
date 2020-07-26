@@ -1,30 +1,47 @@
 import React from 'react';
-import { headerToolbarOptions } from '../../consts';
+import { pagesLabels } from '../../consts';
 
-const actionWhenClicked = () => alert("הכפתור יעביר לדף טיסות");
-
-function getClassName(optionName) {
+function getClassName(isCurPage) {
    var result = "toolbarOption"
-   if (optionName == "חבילות נופש") 
-       result += " curOption";
+   if (isCurPage)
+      result += " curOption";
    return result;
 }
 
+export default ({ curPageKey, onLinkClicked }) => {
+   const pagesLinks = [];
+   for (const pageKey in pagesLabels) {
+      pagesLinks.push(
+         <p
+            key={pageKey}
+            className={getClassName(pageKey === curPageKey)}
+            onClick={() => onLinkClicked(pageKey)}>
+            {pagesLabels[pageKey]}
+         </p>
+      );
+   }
+
+   return (
+      <div className="toolbar">
+         {pagesLinks}
+      </div>
+   );
+};
+
+
+/*
+const actionWhenClicked = () => alert("הכפתור יעביר לדף טיסות");
+
 const createToolbarOption = (optionName) => (
-   <p 
-      className={getClassName(optionName)} 
+   <p
+      className={getClassName(optionName)}
       key={optionName}
       onClick={actionWhenClicked}>
       {optionName}
    </p>
 );
 
+ {headerToolbarOptions.map(createToolbarOption)}
+*/
 
 
-const Toolbar = () => (
-   <div className="toolbar">
-      { headerToolbarOptions.map(createToolbarOption) }
-   </div>
-);
-
-export default Toolbar;

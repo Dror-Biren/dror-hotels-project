@@ -7,18 +7,18 @@
 .deal {
    display: flex;
    justify-content: flex-end;
-   margin-top: 15*$deal-scale;
-   height: 205*$deal-scale;
+   margin-top: calc(15 * $rpx);
+   height: calc(205 * $rpx);
 }
 
 .deal-img {
-   width: 180*$deal-scale;
+   width: calc(180* $rpx);
 }
 
 .deal-button {
    color: white;
-   padding: 13*$deal-scale 18*$deal-scale;
-   font-size: 16* $deal-scale;
+   padding: calc(13*$rpx) calc(18*$rpx);
+   font-size:  calc(16*$rpx);
 }
 
 
@@ -29,8 +29,8 @@
    text-align: center;
    justify-content: center;
 
-   width: 200*$deal-scale;
-   padding: 0 30*$deal-scale;
+   width: calc(200*$rpx);
+   padding: 0 calc(30*$rpx);
    border: $dealBorder;
    background-color: rgb(237, 245, 250);
    color: $azure;
@@ -41,17 +41,17 @@
    }
 
    h1 {
-      font-size: 30* $deal-scale;
+      font-size:  calc(30*$rpx);
    }
 
    h5 {
-      font-size: 12* $deal-scale;
+      font-size:  calc(12*$rpx);
    }
 
    button {
       background-color: rgb(255, 41, 41);
-      margin-top: 20 * $deal-scale;
-      margin-bottom: 5*$deal-scale;
+      margin-top:  calc(20 *$rpx);
+      margin-bottom: calc(5* $rpx);
       font-weight: 600;
    }
 }

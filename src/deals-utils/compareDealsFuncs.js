@@ -1,4 +1,4 @@
-import { sorterOptions, ratingWorthwhileValueCompareToPrice, maxRatingStars } from '../consts';
+import { sorterKeys, ratingWorthwhileValueCompareToPrice, maxRatingStars } from '../consts';
 
 const getCompareFunc = (evaluateDeal) => (
    (deal1, deal2) => evaluateDeal(deal1) - evaluateDeal(deal2)
@@ -6,26 +6,26 @@ const getCompareFunc = (evaluateDeal) => (
 
 
 export default {
-   [sorterOptions.CHEAP]: getCompareFunc(
+   [sorterKeys.CHEAP]: getCompareFunc(
       ({ price }) => price
    ),
 
-   [sorterOptions.EXPENSIVE]: getCompareFunc(
+   [sorterKeys.EXPENSIVE]: getCompareFunc(
       ({ price }) => -price
    ),
 
 
-   [sorterOptions.POPULAR]: getCompareFunc(
+   [sorterKeys.POPULAR]: getCompareFunc(
       ({ rating }) => -rating
    ),
 
 
-   [sorterOptions.UNPOPULAR]: getCompareFunc(
+   [sorterKeys.UNPOPULAR]: getCompareFunc(
       ({ rating }) => rating
    ),
 
 
-   [sorterOptions.WORTHWHILE]: getCompareFunc(
+   [sorterKeys.WORTHWHILE]: getCompareFunc(
       getWorthwhileValue
    )
 };

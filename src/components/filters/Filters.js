@@ -25,7 +25,7 @@ import Expand from 'react-expand-animated';
 import FiltersContent from './FiltersContent';
  
 export default class extends Component {
-  state = { isExpended: true };
+  state = { isExpended: screen.width > 600 };
  
   toggleOpen = () => {
     this.setState(prevState => ({ isExpended: !prevState.isExpended }));

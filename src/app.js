@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
-import Page from './components/Page';
-import LoadingPage from './components/LoadingPage';
+import MainPage from './components/pages/MainPage';
+import LoadingPage from './components/pages/LoadingPage';
 import configureStore from './store/configureStore';
 import fetchAppData from './utils/fetchAppData';
 
@@ -26,7 +26,7 @@ function renderApp() {
 
    const jsx = (
       <Provider store={store}>
-         <Page />
+         <MainPage />
       </Provider>
    );
 

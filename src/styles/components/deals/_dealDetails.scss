@@ -1,9 +1,9 @@
 .deal-details {
-   width: 500 * $deal-scale;
+   width:  500 *$rpx;
    border: $dealBorder;
-   padding: 15* $deal-scale;
-   margin-left: 15* $deal-scale;
-   margin-right: 15* $deal-scale;
+   padding: calc( 15*$rpx);
+   margin-left:  calc(15*$rpx);
+   margin-right:  calc(15*$rpx);
    display: flex;
    flex-direction: column;
    text-align: right;
@@ -12,13 +12,13 @@
       margin: 0;
       color: $azure;
       font-weight: 500;
-      font-size: 25* $deal-scale;
+      font-size:  calc(25*$rpx);
    }
 }
 
 .deal-times {
-   margin-top: 6* $deal-scale;
-   margin-bottom: 5* $deal-scale;
+   margin-top: calc(6* $rpx);
+   margin-bottom:  calc(5*$rpx);
 }
 
 .deal-time {
@@ -26,16 +26,16 @@
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    margin: 0;
    font-weight: 400;
-   margin-bottom: 3* $deal-scale;
+   margin-bottom:  calc(3*$rpx);
 
    .span-strong {
-      margin-left: 8 * $deal-scale;
+      margin-left:  calc(8 *$rpx);
       font-weight: 700;
    }  
 }
 
 .span-separator {
-   margin: 0 10*$deal-scale 0 12*$deal-scale;
+   margin: 0 calc(10*$rpx) 0 calc(12*$rpx);
 }
 
 
@@ -45,21 +45,21 @@
    p {
       margin: 0;
       font-weight: 600;
-      font-size: 16* $deal-scale;
+      font-size:  calc(16*$rpx);
    }
 
    button {
       background-color: $azure;
-      margin: -18*$deal-scale 0 0 5*$deal-scale;
-      font-size: 16* $deal-scale;
+      margin: calc(-18*$rpx) 0 0 calc(5*$rpx);
+      font-size:  16*$rpx;
    }
 }
 
 .deal-rating {
    align-self: flex-end;
-   margin-top: -5*$deal-scale;
+   margin-top: calc(-5*$rpx);
 
    span {
-      margin: 0 4*$deal-scale;
+      margin: 0 calc(4*$rpx);
    }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import DealListItem from './DealListItem';
-import getVisibleDeals from '../../utils/getVisibleDeals';
+import getVisibleDeals from '../../deals-utils/getVisibleDeals';
 
 function getDealsSummery(amount) {
    switch (amount) {

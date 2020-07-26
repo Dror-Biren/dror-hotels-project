@@ -1,10 +1,10 @@
-import { reducersActions, sorterOptions } from '../consts';
+import { reducersActions, sorterKeys } from '../consts';
 
 const { SET_SORT_BY } = reducersActions.SORTERS;
 
 
 const sorterReducerDefaultState = {
-   sortBy: sorterOptions.WORTHWHILE
+   sortBy: sorterKeys.WORTHWHILE
 };
 
 export default (state = sorterReducerDefaultState, action) => {

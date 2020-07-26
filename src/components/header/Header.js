@@ -1,7 +1,7 @@
 import React from 'react';
 import Toolbar from './Toolbar';
 
-const Header = () => (
+const Header = (props) => (
    <div className="header-container">
          <div className="header-title">
             <img
@@ -14,7 +14,7 @@ const Header = () => (
             </h3>
          </div>
 
-      <Toolbar/>     
+      <Toolbar {...props}/>     
    </div>
 );
 

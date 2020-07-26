@@ -33,7 +33,7 @@ export const ratingWorthwhileValueCompareToPrice = 400;
 //  is equivalent to an additional price of 400$ per day
 
 
-export const sorterOptions = {
+export const sorterKeys = {
    CHEAP: '0',
    EXPENSIVE: '1',
    POPULAR: '2',
@@ -42,40 +42,34 @@ export const sorterOptions = {
 }
 
 export const sorterOptionsData = {
-   [sorterOptions.CHEAP]: {
+   [sorterKeys.CHEAP]: {
       selectMenuText: "מחיר, מהנמוך לגבוה",
       buttonText: "הכי זול",
       iconSrc: "/images/sort_price2.png"
    },
 
-   [sorterOptions.EXPENSIVE]: {
+   [sorterKeys.EXPENSIVE]: {
       selectMenuText: "מחיר, מהגבוה לנמוך"
    },
 
-   [sorterOptions.POPULAR]: {
+   [sorterKeys.POPULAR]: {
       selectMenuText: "דירוג, מהגבוה לנמוך",
       buttonText: "הכי פופולרי",
       iconSrc: "/images/sort_popular2.png"
    },
 
-   [sorterOptions.UNPOPULAR]: {
+   [sorterKeys.UNPOPULAR]: {
       selectMenuText: "דירוג, מהנמוך לגבוה"
    },
    
-   [sorterOptions.WORTHWHILE]: {
+   [sorterKeys.WORTHWHILE]: {
       selectMenuText: "הכי משתלם",
       buttonText: "הכי משתלם",
       iconSrc: "/images/sort_worthwhile.png"
    }
 };
 
-export const headerToolbarOptions = [
-   "צור קשר",
-   "טיולים מאורגנים",
-   "טיסות",
-   "חבילות נופש",
-   "דף הבית"
-];
+
 
 
 export const footerToolbarOptions = {
@@ -115,6 +109,22 @@ export const socialMadiaImages = [
    "/images/social_madia_logo_d.png",
    "/images/social_madia_logo_e.png",
 ];
+
+export const pagesKeys = {
+   CONTECT_US: '0',
+   ORGANIZED_TRIPS: '1',
+   FLIGHTS: '2',
+   DEALS: '3',
+   HOME_PAGE: '4'
+};
+
+export const pagesLabels = {
+   [pagesKeys.CONTECT_US]: "צור קשר",
+   [pagesKeys.ORGANIZED_TRIPS]: "טיולים מאורגנים",
+   [pagesKeys.FLIGHTS]: "טיסות",
+   [pagesKeys.DEALS]: "חבילות נופש",
+   [pagesKeys.HOME_PAGE]: "דף הבית"
+};
 
 
 
