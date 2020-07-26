@@ -25,7 +25,7 @@
 
 .searchIcon {
    width: scale-L(20);
-   margin-right: -25px;;
+   margin-right: scale-L(-30);
    z-index: 99;
    filter: brightness(-30%);
 }

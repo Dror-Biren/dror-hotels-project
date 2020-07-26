@@ -1,4 +1,4 @@
-export const ratingPrices = [600, 700, 800, 900, 1000];
+export const ratingPrices = [600, 690, 750, 870, 970];
 
 export const maxRatingStars = ratingPrices.length;
 

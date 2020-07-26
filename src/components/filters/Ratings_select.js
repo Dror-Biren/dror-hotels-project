@@ -22,7 +22,7 @@ const SelectRatings = ({ toggleSelectRatingOption }) => {
       <div>
          <div className="filters_title">
             דירוג מלון
-            </div>
+         </div>
          <div className="filters_options">
             {ratingsOptions}
          </div>

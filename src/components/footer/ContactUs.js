@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ContactInput from './ContactInput';
+
 export default () => (
    <div className="contactUs-container">
       <div className="contactUs">
@@ -12,16 +14,16 @@ export default () => (
                הרשם
             </button>
 
-            <input
+            <ContactInput
                className="emailInput"
-               type="text"
                placeholder="דואר אלקטרוני"
+               iconSrc="/images/emailIcon.png"
             />
 
-            <input
+            <ContactInput
                className="nameInput"
-               type="text"
                placeholder="שם מלא"
+               iconSrc="/images/pencilIcon.png"
             />
          </div>
       </div>

@@ -1,0 +1,28 @@
+.filter-expand-block {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.filter-expend-button{
+   cursor: pointer;
+   margin-left: scale-L(22);
+   height: scale-L(17);
+}
+
+.invisible-mobile {
+   @media (max-width: $content-breakpoint) {
+      display: none;
+   }
+
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   flex-grow: 1;
+}
+
+.invisible-PC {
+   @media (min-width: $content-breakpoint) {
+      display: none;
+   }
+}

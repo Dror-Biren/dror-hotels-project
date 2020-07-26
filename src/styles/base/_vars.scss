@@ -5,7 +5,10 @@ $dealBorder: 1px solid rgb(179, 179, 179);
 //$rpx: 1.1 * 100vw / 1680;
 
 @function scale($size, $minScale) {
-   @return Max(1 * $size * 100vw / 1680, $minScale * $size);
+   @if $size > 0 {
+      @return Max($size * 100vw / 1680, $minScale * $size);
+   }
+   @return Min($size * 100vw / 1680, $minScale * $size);
 }
 
 
@@ -21,5 +24,6 @@ $dealBorder: 1px solid rgb(179, 179, 179);
 $header-breakpoint-L: 1060px;
 $header-breakpoint-S: 600px;
 
-$content-breakpoint: 600px;
+$content-breakpoint: 650px;
 $sorters-breakpoint: 900px;
+$contactUs-breakpoint: 800px;

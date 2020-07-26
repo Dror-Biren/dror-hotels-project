@@ -1,13 +1,14 @@
 import React from 'react';
-import Checkbox from './Checkbox';
 
+import { ratingPrices } from '../../consts/filters';
+import Checkbox from './Checkbox';
 import StarsRating from '../StarsRating';
 
 export default ({ rating, actionWhenToggleSelect }) => {
    return (
       <div className="filters_option">
          <p className="filters_option-price">
-            819$
+            {ratingPrices[rating-1]}$
          </p>
 
          <StarsRating 

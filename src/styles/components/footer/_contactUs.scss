@@ -1,5 +1,5 @@
 .contactUs-container {
-   margin-top: scale-L(50);
+   margin-top: scale-L(70);
    text-align: right;
 
    height: scale-L(350);
@@ -14,11 +14,20 @@
 
 .contact-form {
    display: flex;
-   @media (max-width: $content-breakpoint) {
+   @media (max-width: $contactUs-breakpoint) {
       flex-direction: column-reverse;
       align-items: center;
-      height: 130px;
+      align-content: center;
+      height: 150px;
       justify-content: space-between;
+
+      .emailInput {
+         margin: 0;
+      }
+
+      button {
+         margin-left: scale-L(20);
+      }
    }
 
    button {
@@ -27,23 +36,39 @@
       font-size: scale-L(23);
       padding: scale-L(15) scale-L(100);
    }
-
-   .emailInput {
-      margin: 0 scale-L(20);
-   }
-
-   input {
-      text-align: right;
-      padding: scale-L(10);
-      width: scale-L(290);
-      font-size: scale-L(16);
-   }
 }
 
 .contactUs-title {
-   margin-top: 100;
+   @media (min-width: $contactUs-breakpoint) {
+      margin-top: scale-L(100);
+   }
    color: $azure;
    font-size: scale-L(22);
    font-weight: 500;
    //text-align: right;
+}
+
+.emailInput {
+   margin: 0 scale-L(40) 0 scale-L(25);
+}
+
+.contact-input {
+   display: flex;
+   align-content: center;
+   align-items: center;
+   padding: 0;
+
+   input {
+      text-align: right;
+      padding: scale-L(10);
+      padding-right: scale-L(60);
+      width: scale-L(290);
+      height: scale-L(60);
+      font-size: scale-L(16);
+   }
+
+   img {
+      height: scale-L(21);
+      margin-left: scale-L(-45);
+   }
 }

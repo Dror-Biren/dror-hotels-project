@@ -3,7 +3,8 @@ import React from 'react';
 const createLinkJsx = (option) => (
    <p 
       key={option}
-      className={"footer-link"}>
+      className={"footer-link"}
+      onClick={()=> location.href = 'https://www.google.com/flights'}>
       {option}
    </p>
 );
