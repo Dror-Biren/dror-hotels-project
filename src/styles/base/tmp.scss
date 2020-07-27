@@ -1,0 +1,33 @@
+
+
+   @if #{$responsivePX} > #{$minScale} {
+
+   @if $size > 0 {
+      @return Max($size * 100vw / 1680, $minScale * $size);
+   }
+   @return Min($size * 100vw / 1680, $minScale * $size);
+
+
+
+
+   @if $responsivePX > $minScale {
+      @return $responsivePX * $size;
+   }
+   @return 400px;
+   @return $minScale * $size;
+
+
+
+
+   @if $responsivePX > $minScale {
+      @return $responsivePX * $size;
+   }
+   //@return 400px;
+   @return 1px * $minScale * $size;
+
+
+   @if unquote("calc( #{$responsivePX} - #{$minScale} ) > 0")  {
+      @return $responsivePX * $size;
+   }
+   //@return 400px;
+   @return 1px * $minScale * $size;

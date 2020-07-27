@@ -1,6 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 
+import { hostingTypesData } from '../../../consts/filters';
 import StarsRating from '../StarsRating';
 import DealTimes from './DealTimes';
 
@@ -18,7 +19,7 @@ export default ({ hotelName, rating, startTime, finishTime, hostingType }) => (
       <DealTimes
          startTime={moment(startTime)}
          finishTime={moment(finishTime)}
-         hostingType={hostingType}
+         hostingType={hostingTypesData[hostingType].label}
       />
    </div>
 );

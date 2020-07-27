@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { setSearch } from '../../actions/filters';
+import { setSearch } from '../../../actions/filters';
 
 const SelectRatings = ({ setSearch }) => (
    <div className="search-container">

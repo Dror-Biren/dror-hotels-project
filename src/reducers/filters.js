@@ -1,8 +1,8 @@
 import reducersActions from '../consts/reducersActions';
 import { 
    pricesRangeLimits, 
-   hostingTypesOptions,
-    maxRatingStars 
+   hostingTypesData,
+   maxRatingStars 
 } from '../consts/filters';
 
 
@@ -15,8 +15,8 @@ const {
 
 
 const selectedHostingOptions = {};
-for(const option of hostingTypesOptions)
-   selectedHostingOptions[option] = true;
+for(const optionKey in hostingTypesData)
+   selectedHostingOptions[optionKey] = true;
 
 const selectedRatings = {};
 for(let i=1; i<=maxRatingStars; i++)
@@ -55,7 +55,7 @@ export default (state = filtersReducerDefaultState, action) => {
       case TOGGLE_SELECT_OF_HOSTING_OPTION:
          return {
             ...state,
-            selectedHostingOptions: toggleValueOfKey(state.selectedHostingOptions, action.option)
+            selectedHostingOptions: toggleValueOfKey(state.selectedHostingOptions, action.optionKey)
          } 
     
       

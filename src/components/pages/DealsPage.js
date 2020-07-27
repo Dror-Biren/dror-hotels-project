@@ -1,26 +1,12 @@
 import React from 'react';
 
-import Sorters from '../sorters/Sorters';
-import DealsList from '../deals/DealsList';
-import Filters from '../filters/Filters';
-
-import ContactUs from '../footer/ContactUs';
-import FooterLinks from '../footer/FooterLinks';
-import SocialMediaLinks from '../footer/SocialMediaLinks';
+import DealsRelated_All from '../dealsRelated/DealsRelated_All'
+import Footers_All from '../footer/Footers_All';
 
 export default () => (
    <div>  
-      <div className="page-content">
-         <div className="pageCenter">
-            <Sorters/>
-            <DealsList/>
-         </div>
-         <Filters/>
-      </div>
-
-      <ContactUs/>
-      <FooterLinks/>
-      <SocialMediaLinks/>
+      <DealsRelated_All/>
+      <Footers_All/>
    </div>
 );
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ratingPrices } from '../../consts/filters';
+import { ratingPrices } from '../../../consts/filters';
 import Checkbox from './Checkbox';
 import StarsRating from '../StarsRating';
 

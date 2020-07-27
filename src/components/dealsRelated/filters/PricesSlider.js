@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
 import Slider from '@material-ui/core/Slider';
 
-import { setPricesRange } from '../../actions/filters';
-import { pricesRangeLimits } from '../../consts/filters';
+import { setPricesRange } from '../../../actions/filters';
+import { pricesRangeLimits } from '../../../consts/filters';
 
 
 const CustomSlider = withStyles({

@@ -22,8 +22,8 @@ export const toggleSelectRatingOption = (rating) => ({
    rating
 });
 
-export const toggleSelectHostingOption = (option) => ({
+export const toggleSelectHostingOption = (optionKey) => ({
    type: TOGGLE_SELECT_OF_HOSTING_OPTION,
-   option
+   optionKey
 });
 

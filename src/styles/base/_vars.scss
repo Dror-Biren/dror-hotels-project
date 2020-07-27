@@ -1,10 +1,12 @@
 $azure: rgb(0, 149, 218);
 $dealBorder: 1px solid rgb(179, 179, 179);
 
-//$rpx: Max(1.1 * 100vw / 1680, 0.5px);
-//$rpx: 1.1 * 100vw / 1680;
+//$rpx: Max(100vw / 1680, 0.5px);
+//$rpx: 100vw / 1680;
 
 @function scale($size, $minScale) {
+   $responsivePX: 100vw / 1680; // 1680 = my screen width
+
    @if $size > 0 {
       @return Max($size * 100vw / 1680, $minScale * $size);
    }
